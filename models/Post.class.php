@@ -1,40 +1,37 @@
 <?php
 class Post {
     private $id;
-    private $header;
-    private $title;
-    private $author;
-    private $image;
-    private $date;
-    private $content;
+    private $name;
+    private $description;
+    private $origin;
+    private $evidence;
 
     //static public $posts = [];
 
-    public function __construct($id, $header, $title, $author, $image, $content, $date){
+    public function __construct($id, $name, $description, $origin, $evidence){
         $this->id = $id;
-        $this->title = $title;
-        $this->content = $content;
-        $this->author = $author;
-        $this->date = $date;
-        $this->header = $header;
-        $this->image = $image;
+        $this->name = $name;
+        $this->description = $description;
+        $this->origin = $origin;
+        $this->evidence = $evidence;
 
         //self::$posts[] = $this;
     }
 
     public function getId() { return $this->id; }
-    public function getTitle() { return $this->title; }
-    public function setTitle($title) { $this->title = $title; }
-    public function getContent() { return $this->content; }
-    public function setContent($content) { $this->content = $content; }
-    public function getAuthor() { return $this->author; }
-    public function setAuthor($author) { $this->author = $author; }
-    public function getDate() { return $this->date; }
-    public function setDate($date) { $this->date = $date; }
-    public function getHeader() { return $this->header; }
-    public function setHeader($header) { $this->header = $header; }
-    public function getImage() { return $this->image; }
-    public function setImage($image) { $this->image = $image; }
+
+    public function getname() { return $this->name; }
+    public function setname($name) { $this->name = $name; }
+
+    public function getdescription() { return $this->description; }
+    public function setdescription($description) { $this->description = $description; }
+
+    public function getorigin() { return $this->origin; }
+    public function setorigin($origin) { $this->origin = $origin; }
+
+    public function getevidence() { return $this->evidence; }
+    public function setevidence($evidence) { $this->evidence = $evidence; }
+
 }
 
 //test
