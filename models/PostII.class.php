@@ -32,3 +32,6 @@ class PostII {
     public function getdate() { return $this->date; }
     public function setdate($date) { $this->date = $date; }
 }
+
+
+// test 2
