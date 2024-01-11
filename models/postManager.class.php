@@ -18,15 +18,11 @@ class PostManager  extends Model{ //extends ajoute les propriétés et les méth
         foreach ($posts as $p) {
             $this->addPost(new Post(
                 $p['id'],
-                $p['header'],
-                $p['title'],
-                $p['author'],
-                $p['image'],
-                $p['body'],
-                $p['date']
+                $p['name'],
+                $p['description'],
+                $p['origin'],
+                $p['evidence']
             ));
         }
     }
-
-
 }
