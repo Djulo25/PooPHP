@@ -7,7 +7,7 @@ class PostManager  extends Model{ //extends ajoute les propriétés et les méth
         return $this->posts; //on pourrais modifier les posts, on ne peut que les lire
     }
 
-    public function addPost(Post $post) {
+    public function addPost(Phenomenon $post) {
         $this->posts[] = $post; //equivalent de array_push;
     }
 
@@ -16,7 +16,7 @@ class PostManager  extends Model{ //extends ajoute les propriétés et les méth
         $req->execute();
         $posts = $req->fetchAll(PDO::FETCH_ASSOC);
         foreach ($posts as $p) {
-            $this->addPost(new Post(
+            $this->addPost(new Phenomenon(
                 $p['id'],
                 $p['name'],
                 $p['description'],
