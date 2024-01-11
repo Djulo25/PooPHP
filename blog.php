@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require_once('models/Post.class.php');
+require_once('models/Phenomenon.class.php');
 require_once('models/postManager.class.php');
 
 $postManager = new PostManager();
@@ -22,11 +22,10 @@ ob_start();
 <?php foreach ($postManager->getPosts() as $p) { ?>
     <div class="card mb-3">
     <div class="card-body">
-            <h5 class="card-title"><?php echo $p->getHeader(); ?></h5>
-            <p class="card-text"><?php echo $p->getTitle(); ?></p>
-            <p class="card-text"><?php echo $p->getAuthor(); ?></p>
-            <p class="card-text"><?php echo $p->getImage(); ?></p>
-            <p class="card-text"><?php echo $p->getdate(); ?></p>
+            <p class="card-text"><?php echo $p->getName(); ?></p>
+            <p class="card-text"><?php echo $p->getDescription(); ?></p>
+            <p class="card-text"><?php echo $p->getOrigin(); ?></p>
+            <p class="card-text"><?php echo $p->getEvidence(); ?></p>
         </div>
     </div>
     </div>

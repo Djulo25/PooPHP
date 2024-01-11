@@ -20,17 +20,17 @@ class Phenomenon {
 
     public function getId() { return $this->id; }
 
-    public function getname() { return $this->name; }
-    public function setname($name) { $this->name = $name; }
+    public function getName() { return $this->name; }
+    public function setName($name) { $this->name = $name; }
 
-    public function getdescription() { return $this->description; }
-    public function setdescription($description) { $this->description = $description; }
+    public function getDescription() { return $this->description; }
+    public function setDescription($description) { $this->description = $description; }
 
-    public function getorigin() { return $this->origin; }
-    public function setorigin($origin) { $this->origin = $origin; }
+    public function getOrigin() { return $this->origin; }
+    public function setOrigin($origin) { $this->origin = $origin; }
 
-    public function getevidence() { return $this->evidence; }
-    public function setevidence($evidence) { $this->evidence = $evidence; }
+    public function getEvidence() { return $this->evidence; }
+    public function setEvidence($evidence) { $this->evidence = $evidence; }
 
 }
 
